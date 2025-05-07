@@ -180,7 +180,6 @@ df[numcols]=scaler.fit_transform(df[numcols])
 
 # In[120]:
 
-
 joblib.dump(scaler,'models/scaler.pkl')
 
 
