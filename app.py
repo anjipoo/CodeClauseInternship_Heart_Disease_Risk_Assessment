@@ -3,8 +3,15 @@ import pandas as pd
 import numpy as np
 import joblib
 import json
+import os
+import subprocess
 
 st.set_page_config(page_title="heart disease prediction", layout="wide")
+
+# Run preprocess.py if model or scaler is missing
+if not os.path.exists('models/best_model.pkl') or not os.path.exists('models/scaler.pkl'):
+    st.write("Generating model and scaler...")
+    subprocess.run(["python", "preprocess.py"])
 
 model=joblib.load('models/best_model.pkl')
 scaler=joblib.load('models/scaler.pkl')
