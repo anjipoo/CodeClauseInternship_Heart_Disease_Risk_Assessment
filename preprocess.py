@@ -24,8 +24,7 @@ import json
 
 # In[99]:
 
-
-df=pd.read_csv(r'C:\Users\anjan\OneDrive\Desktop\codeclause\heart\data\heart_disease_uci.csv')
+df=pd.read_csv('data/heart_disease_uci.csv')
 
 
 # In[100]:
