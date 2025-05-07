@@ -1,0 +1,5 @@
+.venv/
+pycache/
+*.pyc
+data/heart_disease_uci_preprocessed.csv
+models/
